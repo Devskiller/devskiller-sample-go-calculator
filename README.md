@@ -30,6 +30,7 @@ We use [Go mod](https://golang.org/ref/mod) to manage dependencies.
 You project will be built with the following commands:
 
 ```sh
+go mod tidy
 go test ./... -v -timeout 1m
 ```
 
