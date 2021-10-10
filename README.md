@@ -25,13 +25,12 @@ projects](https://goo.gl/gkQU4J) guide first**
 
 ## Technical details
 
-We use Glide to to manage dependencies.
+We use [Go mod](https://golang.org/ref/mod) to manage dependencies.
 
 You project will be built with the following commands:
 
 ```sh
-glide update
-go test $(go list ./... | grep -v /vendor/) -v -timeout 1m
+go test ./... -v -timeout 1m
 ```
 
 ## Automatic assessment
